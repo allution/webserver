@@ -1,0 +1,1 @@
+define(["strategies/auto_bet/widget","strategies/auto_bet/logic","strategies/auto_bet/validation","strategies/auto_bet/initial_state"],function(e,t,n,r){var i=e;return i.logic=t,i.validate=n,i.initialState=r,i.isWidget=!0,i});
