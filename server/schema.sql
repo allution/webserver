@@ -35,7 +35,6 @@ CREATE SEQUENCE fundings_id_seq
     NO MAXVALUE
     CACHE 1;
 
-
 --
 -- TOC entry 2899 (class 0 OID 0)
 -- Dependencies: 172
@@ -43,7 +42,6 @@ CREATE SEQUENCE fundings_id_seq
 --
 
 ALTER SEQUENCE fundings_id_seq OWNED BY fundings.id;
-
 
 --
 -- TOC entry 173 (class 1259 OID 87697)
@@ -140,9 +138,10 @@ CREATE TABLE plays (
     id bigint NOT NULL,
     user_id bigint NOT NULL,
     cash_out bigint,
+    auto_cash_out bigint,
     game_id bigint NOT NULL,
     created timestamp with time zone DEFAULT now() NOT NULL,
-    bet bigint,
+    bet bigint NOT NULL,
     bonus bigint
 );
 
