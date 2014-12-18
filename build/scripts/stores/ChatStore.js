@@ -1,0 +1,1 @@
+define(["lib/lodash","lib/events","dispatcher/AppDispatcher"],function(e,t,n){var r="change",i="",s=e.extend({},t,{addEventListener:function(e){this.on(r,e)},removeEventListener:function(e){this.off(r,e)},setChatInput:function(e){},getState:function(){return{chatInput:i}}});return s});
