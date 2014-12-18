@@ -1,0 +1,1 @@
+define(["dispatcher/AppDispatcher","constants/AppConstants"],function(e,t){var n={say:function(n){e.handleViewAction({actionType:t.ActionTypes.SAY_CHAT,msg:n})}};return n});
